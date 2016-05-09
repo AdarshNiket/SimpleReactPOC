@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var path = require('path');
 var plugins = require('gulp-load-plugins')();
 var webpack = require('webpack-stream');
+var webpackConfig = require('./webpack.config.js');
 
 //var port = plugins.util.env.port || 3000;
 var src = 'src/';
@@ -35,7 +36,9 @@ gulp.task('html', function(){
 });
 
 gulp.task('components', function() {
-    return gulp.src(src + 'components/**/*')
+    return gulp.src(webpackConfig.entry)
+        .pipe(webpack(webpackConfig))
+        .pipe(isProduction ? plugins.uglifyjs() : plugins.util.noop())
         .pipe(gulp.dest(dist + 'components'))
         .pipe(plugins.size({ title : 'js' }))
         .pipe(plugins.connect.reload());

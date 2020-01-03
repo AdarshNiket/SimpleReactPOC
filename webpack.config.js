@@ -35,7 +35,8 @@ module.exports = {
           }
         }
       ]
-/*var webpack = require('webpack');
+
+var webpack = require('webpack');
 
 module.exports = {
     devtool: 'eval',
@@ -56,6 +57,5 @@ module.exports = {
             loaders: ['react-hot', 'babel'],
             include: path.join(__dirname, 'src')
         }]
-*/
     }
 };

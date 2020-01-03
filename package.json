@@ -4,8 +4,11 @@
   "description": "Playing around with react",
   "main": "index.html",
   "scripts": {
+<<<<<<< 581b760918818c75882ec2fabe49f91ef510f86f
     "build": "webpack",
     "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build",
+=======
+>>>>>>> Added resources folder
     "start": "gulp"
   },
   "repository": {
@@ -21,28 +24,27 @@
   "dependencies": {
     "react": "^15.0.2",
     "react-dom": "^0.14.3",
-    "webpack": "^1.13.0",
-    "webpack-dev-server": "^1.14.1",
-    "flux": "^2.1.1",
-    "react-bootstrap-grid": "^1.0.0",
-    "webpack-stream": "^3.2.0"
+    "flux": "*",
+    "react": "*",
+    "react-bootstrap-grid": "*"
   },
   "devDependencies": {
-    "babel": "^6.5.2",
-    "babel-core": "^6.8.0",
-    "babel-jest": "^12.0.2",
-    "babel-loader": "^6.2.4",
-    "babel-preset-react": "^6.3.13",
-    "file-loader": "^0.8.5",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-connect": "^4.0.0",
-    "gulp-livereload": "^3.8.1",
-    "gulp-load-plugins": "^1.2.2",
-    "gulp-size": "^2.1.0",
-    "gulp-uglifyjs": "^0.6.2",
-    "gulp-util": "^3.0.7",
-    "gulp-watch": "^4.3.5",
+    "babel": "*",
+    "babel-core": "*",
+    "babel-jest": "*",
+    "babel-loader": "*",
+    "extract-text-webpack-plugin": "*",
+    "gulp": "*",
+    "gulp-concat": "*",
+    "gulp-connect": "*",
+    "gulp-livereload": "*",
+    "gulp-load-plugins": "*",
+    "gulp-size": "*",
+    "gulp-uglifyjs": "*",
+    "gulp-util": "*",
+    "gulp-watch": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*",
+    "webpack-stream": "*"
   }
 }

@@ -4,11 +4,8 @@
   "description": "Playing around with react",
   "main": "index.html",
   "scripts": {
-<<<<<<< 581b760918818c75882ec2fabe49f91ef510f86f
     "build": "webpack",
     "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build",
-=======
->>>>>>> Added resources folder
     "start": "gulp"
   },
   "repository": {
